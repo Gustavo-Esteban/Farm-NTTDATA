@@ -13,7 +13,7 @@ Clone o repositório do projeto:
 Navegue até a pasta back-end no terminal.
 
 ```bash
-  cd ./back-end
+  cd ./Back
 ```
 
 Execute o seguinte comando para iniciar o servidor do back-end.
@@ -27,7 +27,7 @@ Execute o seguinte comando para iniciar o servidor do back-end.
 Navegue até a pasta front-end no terminal.
 
 ```bash
-  cd ./front-end
+  cd ./fazenda
 ```
 
 Execute o seguinte comando para instalar as dependências necessárias.
