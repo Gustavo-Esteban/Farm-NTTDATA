@@ -1,0 +1,82 @@
+<form (ngSubmit)="ruralProducerSubmit()" [formGroup]="produtorForm">
+  <div class="container">
+    <div>
+      <h1>Cadastro Produtor Rural</h1>
+    </div>
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>CPF / CNPJ</mat-label>
+      <input matInput formControlName="cpfCnpj" appCpfCnpjValidator (blur)="formatCpfCnpj()" required>
+      <mat-error *ngIf="produtorForm.controls['cpfCnpj'].errors?.['']">O CPF ou CNPJ é obrigatório.</mat-error>
+      <mat-error *ngIf="produtorForm.controls['cpfCnpj'].errors?.['appCpfCnpjValidator']"> CPF/CNPJ inválido</mat-error>
+
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Nome do produtor</mat-label>
+      <input matInput formControlName="nomeProdutor" required>
+      <mat-error *ngIf="produtorForm.controls['nomeProdutor'].errors?.['']">O nome do produtor é
+        obrigatório.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Nome da Fazenda</mat-label>
+      <input matInput formControlName="nomeFazenda" required>
+      <mat-error *ngIf="produtorForm.controls['nomeFazenda'].errors?.['']">O nome da Fazenda é obrigatório.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Cidade</mat-label>
+      <input matInput formControlName="cidade" required>
+      <mat-error *ngIf="produtorForm.controls['cidade'].errors?.['']">A cidade é obrigatória.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Estados</mat-label>
+      <mat-select formControlName="estado" required>
+        <mat-option></mat-option>
+        <mat-option [value]="estado.acronimo" *ngFor="let estado of estados">{{ estado.nome }}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="produtorForm.controls['estado'].errors?.['']">O estado é obrigatório.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Área total da fazenda</mat-label>
+      <input matInput formControlName="areaTotalHectares" required>
+      <mat-error *ngIf="produtorForm.controls['areaTotalHectares'].errors?.['']">A área total da fazenda é
+        obrigatória.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Área agricultável</mat-label>
+      <input matInput formControlName="areaAgricultavelHectares" required>
+      <mat-error *ngIf="produtorForm.controls['areaAgricultavelHectares'].errors?.['']">A área agricultável da fazenda é
+        obrigatória.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Área de vegetação</mat-label>
+      <input matInput formControlName="areaVegetacaoHectares" required>
+      <mat-error *ngIf="produtorForm.controls['areaVegetacaoHectares'].errors?.['']">A área de vegetação da
+        fazenda é obrigatória.</mat-error>
+    </mat-form-field>
+
+    <section [formGroup]="culturas" class="flex flex-column align-items-center">
+      <h4>Culturas plantadas:</h4>
+      <div class="agroList">
+        <p-checkbox [binary]="true" value="soja" formControlName="soja" label="Soja"></p-checkbox>
+        <p-checkbox [binary]="true" value="milho" formControlName="milho" label="Milho"></p-checkbox>
+        <p-checkbox [binary]="true" value="algodao" formControlName="algodao" label="Algodão"></p-checkbox>
+        <p-checkbox [binary]="true" value="cafe" formControlName="cafe" label="Café"></p-checkbox>
+        <p-checkbox [binary]="true" value="canaDeAcucar" formControlName="canaDeAcucar" label="Cana de açucar"></p-checkbox>
+      </div>
+      </section>
+
+    <p *ngIf="produtorForm.controls['areaTotalHectares'].errors?.['areaExceeded']" class="areaAlert">A soma de área
+      agricultável e vegetação, não pode ser
+      maior que a área total da fazenda.</p>
+    <div class="row justify-content-center mt-4 mb-4">
+      <p-button type="submit" label="Confirmar" icon="pi pi-check" iconPos="right" class="col-auto"
+        [disabled]="produtorForm.invalid"></p-button>
+    </div>
+  </div>
+</form>

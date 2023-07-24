@@ -1,0 +1,25 @@
+{
+  "Produtor": [
+    {
+      "id": 1,
+      "cpfCnpj": "61.485.789/0001-77",
+      "nomeProdutor": "Roberto",
+      "nomeFazenda": "robertos farm",
+      "cidade": "Suzano",
+      "estado": "SP",
+      "areaTotalHectares": 155,
+      "areaAgricultavelHectares": 2355,
+      "areaVegetacaoHectares": 25525,
+      "culturasID": 1
+    }
+  ],
+  "Culturas": [
+    {
+      "soja": true,
+      "milho": true,
+      "algodao": true,
+      "café": true,
+      "canaDeAcucar": true
+    }
+  ]
+}

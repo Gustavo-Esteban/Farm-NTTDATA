@@ -1,0 +1,190 @@
+{
+  "Produtor": [
+    {
+      "id": 8,
+      "cpfCnpj": "49028040854",
+      "nomeProdutor": "Gustavo",
+      "nomeFazenda": "gustavco Farm",
+      "cidade": "Maceio",
+      "estado": "AL",
+      "areaTotalHectares": "2500",
+      "areaAgricultavelHectares": "200",
+      "areaVegetacaoHectares": "800",
+      "culturas": {
+        "soja": true,
+        "milho": true,
+        "algodao": false,
+        "cafe": false,
+        "canaDeAcucar": false
+      }
+    },
+    {
+      "id": 9,
+      "cpfCnpj": "49028040854",
+      "nomeProdutor": "Victor",
+      "nomeFazenda": "Victor Farm",
+      "cidade": "Maceio",
+      "estado": "RJ",
+      "areaTotalHectares": "2500",
+      "areaAgricultavelHectares": "1000",
+      "areaVegetacaoHectares": "1500",
+      "culturas": {
+        "soja": false,
+        "milho": false,
+        "algodao": true,
+        "cafe": false,
+        "canaDeAcucar": true
+      }
+    },
+    {
+      "id": 10,
+      "cpfCnpj": "49028040854",
+      "nomeProdutor": "Melissa",
+      "nomeFazenda": "Melissa Farm",
+      "cidade": "Maceio",
+      "estado": "RJ",
+      "areaTotalHectares": "2500",
+      "areaAgricultavelHectares": "0",
+      "areaVegetacaoHectares": "2500",
+      "culturas": {
+        "soja": false,
+        "milho": true,
+        "algodao": false,
+        "cafe": true,
+        "canaDeAcucar": false
+      }
+    },
+    {
+      "id": 11,
+      "cpfCnpj": "49028040854",
+      "nomeProdutor": "Ery",
+      "nomeFazenda": "Erys Farm",
+      "cidade": "Maceio",
+      "estado": "GO",
+      "areaTotalHectares": "2500",
+      "areaAgricultavelHectares": "300",
+      "areaVegetacaoHectares": "900",
+      "culturas": {
+        "soja": true,
+        "milho": true,
+        "algodao": true,
+        "cafe": true,
+        "canaDeAcucar": true
+      }
+    },
+    {
+      "id": 12,
+      "cpfCnpj": "49028040854",
+      "nomeProdutor": "Renatinho",
+      "nomeFazenda": "Renatinhos Farm",
+      "cidade": "Maceio",
+      "estado": "CE",
+      "areaTotalHectares": "2500",
+      "areaAgricultavelHectares": "2000",
+      "areaVegetacaoHectares": "500",
+      "culturas": {
+        "soja": true,
+        "milho": true,
+        "algodao": false,
+        "cafe": false,
+        "canaDeAcucar": false
+      }
+    },
+    {
+      "id": 13,
+      "cpfCnpj": "49028040854",
+      "nomeProdutor": "Debora",
+      "nomeFazenda": "Deboras farm",
+      "cidade": "Suzano",
+      "estado": "SP",
+      "areaTotalHectares": "1000",
+      "areaAgricultavelHectares": "800",
+      "areaVegetacaoHectares": "200",
+      "culturas": {
+        "soja": false,
+        "milho": false,
+        "algodao": false,
+        "cafe": true,
+        "canaDeAcucar": true
+      }
+    },
+    {
+      "id": 14,
+      "cpfCnpj": "49028040854",
+      "nomeProdutor": "Gustavo",
+      "nomeFazenda": "Gustavos Farm",
+      "cidade": "Suzano",
+      "estado": "PA",
+      "areaTotalHectares": "1000",
+      "areaAgricultavelHectares": "700",
+      "areaVegetacaoHectares": "300",
+      "culturas": {
+        "soja": false,
+        "milho": true,
+        "algodao": false,
+        "cafe": false,
+        "canaDeAcucar": false
+      }
+    },
+    {
+      "id": 15,
+      "cpfCnpj": "49028040854",
+      "nomeProdutor": "javaliosun",
+      "nomeFazenda": "javaliosun farm",
+      "cidade": "suznao",
+      "estado": "RJ",
+      "areaTotalHectares": "2000",
+      "areaAgricultavelHectares": "1000",
+      "areaVegetacaoHectares": "1000",
+      "culturas": {
+        "soja": false,
+        "milho": true,
+        "algodao": false,
+        "cafe": false,
+        "canaDeAcucar": false
+      }
+    }
+  ],
+  "Graficos": {
+    "totalProdutores": 5,
+    "totalAreaFazendas": 250,
+    "totalAreaAgricultavel": 150,
+    "totalAreaVegetacao": 100,
+    "quantidadeFazendasEstados": [
+      {
+        "estadoNome": "SP",
+        "quantidade": "2"
+      },
+      {
+        "estadoNome": "AL",
+        "quantidade": "1"
+      },
+      {
+        "estadoNome": "RJ",
+        "quantidade": "1"
+      }
+    ],
+    "quantidadeFazendasCulturas": [
+      {
+        "culturaNome": "soja",
+        "quantidade": "2"
+      },
+      {
+        "culturaNome": "milho",
+        "quantidade": "2"
+      },
+      {
+        "culturaNome": "algodao",
+        "quantidade": "2"
+      },
+      {
+        "culturaNome": "cafe",
+        "quantidade": "2"
+      },
+      {
+        "culturaNome": "canaDeAcucar",
+        "quantidade": "2"
+      }
+    ]
+  }
+}

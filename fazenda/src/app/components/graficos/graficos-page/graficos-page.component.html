@@ -1,0 +1,19 @@
+<div class="header">
+  <h2>Contagem de Produtores, Total de Hectares</h2>
+  <p>Total de Produtores: {{ totalProdutores }}</p>
+  <p>Total de Hectares das Fazendas: {{ totalHectaresFazendas | number : '1.2-2' }}</p>
+
+</div>
+
+
+<div class="container">
+
+  <h2>Gráfico de Pizza por Estado</h2>
+  <p-chart type="pie" [data]="dataPorEstado" [options]="options"></p-chart>
+
+  <h2>Gráfico de Pizza por Culturas</h2>
+  <p-chart type="pie" [data]="dataPorCulturas" [options]="options"></p-chart>
+
+  <h2>Gráfico de Pizza por Uso de Solo</h2>
+  <p-chart type="pie" [data]="dataPorUsoDeSolo" [options]="options"></p-chart>
+</div>
